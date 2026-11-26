@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/founderly-inc/offrun/discussions
+    about: Ask how something works, or suggest a feature, in Discussions.
+  - name: Docs and troubleshooting
+    url: https://offrun.dev/docs/troubleshooting/
+    about: Fixes for common problems.
+  - name: Security problem
+    url: https://github.com/founderly-inc/offrun/blob/main/SECURITY.md
+    about: Report it privately by email, not in a public issue.

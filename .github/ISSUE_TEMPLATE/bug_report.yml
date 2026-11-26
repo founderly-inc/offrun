@@ -1,0 +1,69 @@
+name: Bug report
+description: Something in Offrun does not work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please remove email addresses, tokens, keys and private repository names from anything you paste here; this page is public.
+  - type: input
+    id: version
+    attributes:
+      label: Offrun version
+      description: Settings, About.
+      placeholder: "6.6.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - Mac with Apple silicon
+        - Mac with Intel
+        - Windows (beta)
+        - Linux, .deb (beta)
+        - Linux, AppImage (beta)
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "macOS 26.1, Windows 11 24H2, Ubuntu 24.04"
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent involved
+      multiple: true
+      options:
+        - Claude Code
+        - Codex
+        - Antigravity (agy)
+        - Grok Build
+        - Muse Code
+        - None, it is not about an agent
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      description: The steps that lead to the problem.
+      placeholder: |
+        1. Open a project
+        2. Start a Codex chat in a new worktree
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Error messages and screenshots help. Check them for private details first.
+    validations:
+      required: true
